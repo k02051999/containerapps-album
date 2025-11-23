@@ -1,5 +1,8 @@
  name: Trigger auto deployment
  on:
+ # Add env
+ env:
+   CONTAINER_REGISTRY:  # Azure Container Registry のドメイン (~.azurecr.io) をこちらに設定
    # 手動実行用トリガー
    workflow_dispatch:      
  jobs:
